@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+@font-face{
+	font-family: "museo;
+	src: url("fonts/MuseoSansCyrl_1.otf");
+}
+
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background: url("../src/header.jpg") no-repeat center center fixed;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+}
+
+.header__bar{
+	width: 100%;
+	height: 55px;
+}
+
+.header__bar--logo{
+	position: absolute;
+	top: 18px;
+	left: 14px;
+}
+
+.header__bar--logo img{
+	width: 35vw;
+	height: auto;
+}
+
+.header__bar--menu{
+	position: absolute;
+	top: 18px;
+	right: 14px;	
+	width: 20px;
+}
+
+.header__bar--menu img{
+	width: 45px;
+	height: auto;
+	float: right;
+}
+
+h1, h3{
+	font-family: 'Bebas Neue', cursive;	
+	color: #fff;
+}
+
+.header__h1{
+	position: absolute;
+	top: 40%;
+	left: 14px;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 90px;
+	line-height: 80px;
+	word-wrap: break-word;
+}
+
+.header__h3{
+	position: absolute;
+	top: 70%;
+	left: 14px;
+	font-family: "museo", sans-serif;
+	text-transform: lowercase;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.buttonBlock{
+	height: 20vh;
+	width: 100%;
+	background-color: #fff;	
+	padding: 13px 20px;
+}
+
+.buttonBlock__mainButton{
+	width: 100%;
+	height: 100%;
+	background-color: #FF3754;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 26px;
+	letter-spacing: 5px;+++
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .4s;
+}
