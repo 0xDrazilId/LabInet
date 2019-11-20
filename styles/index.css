@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 /*font-family: 'Bebas Neue', cursive;*/
 @font-face{
-	font-family: "museo;
+	font-family: "museo";
 	src: url("fonts/MuseoSansCyrl_1.otf");
 }
 
@@ -9,6 +9,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
+	background-color: #fff;
 }
 
 header{
@@ -19,8 +23,10 @@ header{
 }
 
 .header__bar{
+	position: fixed;
 	width: 100%;
 	height: 55px;
+	z-index: 2;
 }
 
 .header__bar--logo{
@@ -48,13 +54,13 @@ header{
 }
 
 h1, h3{
-	font-family: 'Bebas Neue', cursive;	
+	font-family: 'Bebas Neue', cursive;
 	color: #fff;
 }
 
 .header__h1{
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	left: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -88,8 +94,55 @@ h1, h3{
 	border: none;
 	color: #fff;
 	font-size: 26px;
-	letter-spacing: 5px;+++
-	border-radius: 5px;
+	letter-spacing: 5px;
+	border-radius: 8px;
 	cursor: pointer;
 	transition: .4s;
+}
+
+.awards{
+	margin: 0 auto;
+	width: 85%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.awards__paragraph{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	font-family: "museo", sans-serif;
+	font-size: 1.5em;
+	color: #000;
+	background: transparent;
+}
+
+.awards__cup{
+	width: 40px;
+}
+
+.awards__flag{
+	width: 20px;
+	margin: 0 10px;
+}
+
+.awards__paragraph:nth-child(1) p{
+	background: #FF3754;
+	color: #fff;
+	font-size: 1.6em;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.second{
+	width: 100%;
+}
+
+.second__header{
+	font-size: 22px;
+	text-align: center;
+	color: #FF3754;
 }
