@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
-/*font-family: 'Bebas Neue', cursive;*/
 @font-face{
 	font-family: "museo";
-	src: url("fonts/MuseoSansCyrl_1.otf");
+	src: url("../fonts/MuseoSansCyrl_1.otf");
+}
+
+@font-face{
+	font-family: bebas;
+	src: url("../fonts/BebasNeueRegular.ttf") format("truetype");
 }
 
 *, *:before, *:after{
@@ -16,16 +19,17 @@ body{
 }
 
 header{
-	background: url("../src/header.jpg") no-repeat center center fixed;
+	position: relative;
+	background: url("../src/header.jpg") no-repeat center;
 	background-size: cover;
 	width: 100%;
-	height: 80vh;
+	height: 100vw;
 }
 
 .header__bar{
 	position: fixed;
 	width: 100%;
-	height: 55px;
+	height: 59px;
 	z-index: 2;
 }
 
@@ -54,54 +58,61 @@ header{
 }
 
 h1, h3{
-	font-family: 'Bebas Neue', cursive;
-	color: #fff;
+	font-family: bebas;
 }
 
 .header__h1{
-	position: absolute;
-	top: 30%;
-	left: 14px;
+	position: relative;
+	top: 50%;
+	margin-left: 10px; 
+	margin-right: 10px;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 90px;
-	line-height: 80px;
+	color: #fff;
+	line-height: 1em;
+	font-weight: bold;
+	font-size: 50px;
 	word-wrap: break-word;
 }
 
 .header__h3{
 	position: absolute;
-	top: 70%;
-	left: 14px;
+	bottom: 5%;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-family: "museo", sans-serif;
+	color: #fff;
 	text-transform: lowercase;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .buttonBlock{
-	height: 20vh;
 	width: 100%;
 	background-color: #fff;	
-	padding: 13px 20px;
 }
 
 .buttonBlock__mainButton{
-	width: 100%;
-	height: 100%;
+	height: 68px;
+	width: 300px;
+	margin: 20px auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: #FF3754;
 	outline: none;
 	border: none;
 	color: #fff;
-	font-size: 26px;
-	letter-spacing: 5px;
-	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	line-height: 100%;
 	cursor: pointer;
 	transition: .4s;
 }
 
 .awards{
-	margin: 0 auto;
+	margin: 20px auto;
 	width: 85%;
 	display: flex;
 	flex-flow: column nowrap;
@@ -110,31 +121,38 @@ h1, h3{
 }
 
 .awards__paragraph{
+	margin: 5px auto;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
 	font-family: "museo", sans-serif;
-	font-size: 1.5em;
 	color: #000;
 	background: transparent;
 }
 
 .awards__cup{
-	width: 40px;
+	width: 40px; /*origin - 45px*/
 }
 
 .awards__flag{
-	width: 20px;
+	width: 15px;
 	margin: 0 10px;
+}
+
+.awards__paragraph p{
+	background: transparent;
+	color: #000;
+	font-size: 14px;
 }
 
 .awards__paragraph:nth-child(1) p{
 	background: #FF3754;
 	color: #fff;
-	font-size: 1.6em;
 	border-radius: 5px;
+	line-height: 40px;
 	padding: 0 10px;
+	font-size: 20px;
 }
 
 .second{
@@ -142,7 +160,35 @@ h1, h3{
 }
 
 .second__header{
-	font-size: 22px;
+	font-family: bebas;
+	text-transform: uppercase;
+	font-size: 40px;
 	text-align: center;
 	color: #FF3754;
+}
+
+.profile{
+	text-align: center;
+}
+
+.profile__picture{
+	background: url('../src/profile.jpg') no-repeat;
+	background-size: cover;
+	width: 128px;
+	height: 128px;
+	border-radius: 64px;
+	margin: 20px auto;
+}
+
+.profile__lastname{
+	font-size: 40px;
+	color: #ff3754;
+}
+
+.profile__name{
+	font-family: bebas;
+	font-size: 30px;
+	font-weight: bold;
+	color: #888888;
+	margin-bottom: 23px;
 }
